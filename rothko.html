@@ -7,25 +7,36 @@
     <title>Rothko Painting</title>
 </head>
 <body>
+    <!-- Landmark: header -->
     <header>
-        <!-- You can add a header element if needed -->
+        <h1>Rothko Painting</h1>
     </header>
 
+    <!-- Landmark: main content -->
     <main>
-        <p><!-- Add meaningful content inside the paragraph --></p>
-        <section class="frame">
-            <div class="canvas">
-                <div class="one"></div>
-                <div class="two"></div>
-                <div class="three"></div>
+        <!-- Landmark: description of the painting -->
+        <section aria-labelledby="description-heading">
+            <h2 id="description-heading">Painting Description</h2>
+            <p>
+                This is a painting by Mark Rothko, known for its abstract expressionism. The painting features three colorful rectangles on a canvas, representing his signature style.
+            </p>
+        </section>
+
+        <!-- Landmark: painting canvas -->
+        <section aria-labelledby="canvas-heading">
+            <h2 id="canvas-heading">Painting Canvas</h2>
+            <div class="canvas" role="img" aria-label="Abstract Painting by Mark Rothko">
+                <!-- Add appropriate alternative text if the image is more complex -->
+                <div class="one" aria-hidden="true"></div>
+                <div class="two" aria-hidden="true"></div>
+                <div class="three" aria-hidden="true"></div>
             </div>
         </section>
     </main>
 
+    <!-- Landmark: footer -->
     <footer>
-        <!-- You can add a footer element if needed -->
+        <p>Contact information: example@example.com</p>
     </footer>
 </body>
 </html>
-
-
